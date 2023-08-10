@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h2 style="color: blue; text-align: center">Calculator</h2>
+      <br /><br />
+    </header>
+    <section class="cal">
+      <div class="box">
+        <input type="number" id="number1" placeholder="Enter First Number"/>
+        <br /><br />
+        <input type="number" id="number2" placeholder="Enter Second Number" />
+        <br /><br />
+        <div class="btn">
+          <button id="addButton" onclick="add()">Add</button>
+          <button id="subButton" onclick="sub()">Subtract</button>
+          <button id="mulButton" onclick="mul()">Multiply</button>
+          <button id="divButton" onclick="div()">Divide</button>
+          <button id="resetButton" onclick="resetAll()">Reset</button>
+        </div>
+        <br /><br />
+        <p id="result"></p>
+      </div>
+    </section>
+  </body>
+</html>
